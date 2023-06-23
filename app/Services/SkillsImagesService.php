@@ -4,7 +4,7 @@ namespace App\Services;
 
 class SkillsImagesService
 {
-    private const IMAGES_DIR = '/Users/remi/Documents/dev/remipouly.fr/resources/images/';
+    private const IMAGES_DIR = __DIR__ . '/../../resources/images/';
 
     /**
      * @return array
