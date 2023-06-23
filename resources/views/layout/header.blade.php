@@ -4,7 +4,8 @@
             <a href="{{ route('home') }}" class="flex items-center">
                 <img id="logo"
                      class="block md:hidden"
-                     src="{{ Vite::asset('resources/images/logo-mobile-pouly-remi-developpeur-freelance.svg') }}"
+{{--                     src="{{ Vite::asset('resources/images/logo-mobile-pouly-remi-developpeur-freelance.svg') }}"--}}
+                     src="{{ Vite::asset('resources/images/logo-pouly-remi-developpeur-freelance.png') }}"
                      alt="Logo POULY REMI - Développeur web freelance"
                      width="50" height="50"
                 />
