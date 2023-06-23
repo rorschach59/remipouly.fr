@@ -12,8 +12,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ Vite::asset('resources/images/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ Vite::asset('resources/images/site.webmanifest') }}">
     <link rel="mask-icon" href="{{ Vite::asset('resources/images/safari-pinned-tab.svg') }}" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
     @yield('assets')
