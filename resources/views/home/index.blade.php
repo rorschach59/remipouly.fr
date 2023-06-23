@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="hidden md:block">
-                <img src="{{ Vite::asset('resources/images/image 17.png') }}"
+                <img src="{{ Vite::asset('resources/images/remi-pouly-developpeur-web-freelance.png') }}"
                      alt="Photo de POULY Rémi - Developpeur freelance"
                      width="400" height=""
                 >
