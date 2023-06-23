@@ -3,17 +3,10 @@
         <div class="pl-4 container flex flex-wrap items-center justify-between mx-auto text-black">
             <a href="{{ route('home') }}" class="flex items-center">
                 <img id="logo"
-                     class="block md:hidden"
-{{--                     src="{{ Vite::asset('resources/images/logo-mobile-pouly-remi-developpeur-freelance.svg') }}"--}}
+                     class=""
                      src="{{ Vite::asset('resources/images/logo-pouly-remi-developpeur-freelance.png') }}"
                      alt="Logo POULY REMI - Développeur web freelance"
-                     width="50" height="50"
-                />
-                <img id="logo"
-                     class="hidden md:block"
-                     src="{{ Vite::asset('resources/images/logo-pouly-remi-developpeur-freelance.png') }}"
-                     alt="Logo POULY REMI - Développeur web freelance"
-                     width="150px" height="150px"
+                     width="150" height="150"
                 />
             </a>
             <button data-collapse-toggle="navbar-dropdown" type="button"
