@@ -5,21 +5,22 @@
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 @endsection
 
-@section('title', 'Développeur web freelance')
+@section('title', 'Développeur Web Freelance | Webmaster Indépendant | Freelance Site Web')
+@section('meta-desc', 'Développeur web freelance et webmaster indépendant spécialisé en développement web. Contactez-moi pour un site web de qualité ou un développement spécifique')
 
 @section('content')
 
     <section id="hero" class="grid items-end">
-        <div id="triangle" class="grid items-end px-8 md:grid-cols-2 md:gap-4 md:justify-items-center">
+        <div class="grid items-end p-8 bg-gray-200/50 md:p-0 md:grid-cols-2 md:gap-4 md:justify-items-center md:bg-transparent">
             <div class="flex md:block md:place-self-center">
                 <div class="">
                     <p class="pb-4 text-3xl font-bold tracking-widest">POULY Rémi</p>
                     <h1 class="text-gray-800 md:text-gray-600 text-3xl font-bold underline leading-[1.5em] tracking-widest">
                         Développeur web freelance
                     </h1>
-                    <p class="text-white text-lg font-bold tracking-widest">Backend / Frontend</p>
+                    <p class="mt-6 text-white text-lg font-bold tracking-widest md:mb-0">Backend / Frontend</p>
                 </div>
-                <div class="flex flex-col space-y-8 md:flex-row md:space-y-0 md:gap-8 md:mt-12">
+                <div class="flex flex-col justify-center space-y-8 md:flex-row md:space-y-0 md:gap-8 md:mt-12">
                     <a href="mailto:contact@remipouly.fr"
                        title="Email"
                     >

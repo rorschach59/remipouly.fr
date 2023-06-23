@@ -1,5 +1,5 @@
-<footer class="px-4 pt-12 bg-black text-center text-white md:px-0">
-    <div class="md:grid md:grid-cols-2 md:gap-8">
+<footer class="pt-12 bg-black text-center text-white">
+    <div class="px-4 md:grid md:grid-cols-2 md:gap-8 md:px-0">
         <div class="md:px-24">
         <h3 class="text-xl my-6">
             WEBMASTER FREELANCE
