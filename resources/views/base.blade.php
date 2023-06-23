@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>POULY Rémi - @yield('title')</title>
 
-    @vite('resources/scss/app.scss')
-    @vite('resources/js/app.js')
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+    @yield('assets')
 
 </head>
 <body>

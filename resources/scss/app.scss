@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;400;600;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Andika', sans-serif;
+}
+
+.bordered-title {
+    @apply leading-[2em] font-bold tracking-[0.2em] text-center text-2xl uppercase border-[0.3em] border-black mx-12 md:w-2/6 md:mx-auto
+}
+
+.about-cards {
+    @apply flex gap-4 my-6 items-center md:justify-center
+}
+
+.portfolio-card {
+    @apply my-12 py-4 md:my-0
+}
+
+.external-link {
+    @apply underline text-[#B23A48]
+}
+
+.input {
+    @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-black
+}
+
+.textarea {
+    @apply block py-2.5 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-black
+}
+
+.input-label {
+    @apply pl-2 peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+}
+
+.textarea-label {
+    @apply absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-0 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1
+}
+
+.input-error {
+    @apply text-red-600 border-red-600 focus:ring-0 focus:border-red-600
+}
+
+.input-error-label {
+    @apply text-red-600
+}
+
+.input-error-message {
+    @apply text-xs text-red-400
+}
+.primary-button {
+    @apply p-3 bg-black text-white border-2 border-black transition duration-300 hover:text-black hover:bg-transparent
+}
