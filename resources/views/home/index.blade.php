@@ -2,6 +2,7 @@
 
 @section('assets')
     @vite('resources/scss/home/index.scss')
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 @endsection
 
 @section('title', 'Développeur web freelance')
