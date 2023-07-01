@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import.meta.glob([
     '../images/**',
     '../fonts/**',
+    '../pdf/**',
 ]);
 
 AOS.init();
