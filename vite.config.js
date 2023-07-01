@@ -8,6 +8,7 @@ export default defineConfig({
                 "resources/scss/app.scss",
                 "resources/js/app.js",
                 "resources/scss/home/index.scss",
+                "resources/pdf/CV_POULY_REMI.pdf",
             ],
             refresh: true,
         }),
