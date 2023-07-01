@@ -79,6 +79,12 @@
         <h2 class="bordered-title">A propos</h2>
         <p class="text-center mt-12">
             Découvrez moi, développeur web dévoué spécialisé dans la création de solutions digitales sur-mesure
+            <br>
+            Vous pouvez aussi
+            <a href="{{ Vite::asset('resources/pdf/CV_POULY_REMI.pdf') }}"
+               target="_blank"
+               class="underline"
+            >consulter mon CV</a>
         </p>
         <img src="{{ Vite::asset('resources/images/separateur.svg') }}"
              alt="Séparateur de contenu"

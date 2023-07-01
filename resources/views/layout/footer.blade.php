@@ -44,5 +44,7 @@
     </div>
     <div class="mt-12 py-4 bg-[#2A2A2A]">
         <a href="{{ route('legal-notices') }}" class="underline">Mentions légales</a>
+        |
+        <a href="{{ Vite::asset('resources/pdf/CV_POULY_REMI.pdf') }}" target="_blank" class="underline">Curriculum Vitae</a>
     </div>
 </footer>
