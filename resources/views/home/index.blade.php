@@ -299,7 +299,7 @@
         </p>
 
         @if(session('success'))
-            <div class="flex items-center p-4 mb-4 text-gray-500 bg-white rounded-lg shadow md:w-1/4 md:mx-auto">
+            <div class="flex items-center p-4 mb-4 text-gray-500 bg-white rounded-lg shadow success-form md:w-1/4 md:mx-auto">
                 <div
                     class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg">
                     <img src="{{ Vite::asset('resources/images/icone-check.svg') }}"
