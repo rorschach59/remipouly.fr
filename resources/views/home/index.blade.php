@@ -210,7 +210,7 @@
         <div class="my-24 py-12 bg-black">
             <h2 class="bordered-white-title">Votre site web en 4 étapes</h2>
         </div>
-        <div class="md:grid md:space-y-12 md:mx-6">
+        <div class="px-4 md:grid md:space-y-12 md:px-24">
             <div class="how-it-work-cards"
                  data-aos="fade-down"
                  data-aos-offset="200"
