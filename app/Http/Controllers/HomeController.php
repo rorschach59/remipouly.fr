@@ -38,7 +38,6 @@ class HomeController extends Controller
             try {
                 Mail::to('contact@remipouly.fr')->send(new ContactForm($request->all()));
                 Mail::to($request->get('email'))->send(new ContactFormClient());
-
             } catch (\Exception $e) {
                 Log::error('Erreur lors de l\'envoi d\'email formulaire de contact: ' . $e->getMessage());
             }

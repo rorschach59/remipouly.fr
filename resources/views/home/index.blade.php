@@ -11,7 +11,8 @@
 @section('content')
 
     <section id="hero" class="grid items-end">
-        <div class="grid items-end p-8 bg-gray-200/50 md:p-0 md:grid-cols-2 md:gap-4 md:justify-items-center md:bg-transparent">
+        <div
+            class="grid items-end p-8 bg-gray-200/50 md:p-0 md:grid-cols-2 md:gap-4 md:justify-items-center md:bg-transparent">
             <div class="flex md:block md:place-self-center">
                 <div class="">
                     <p class="pb-4 text-3xl font-bold tracking-widest">POULY Rémi</p>
@@ -95,7 +96,7 @@
             <div>
                 <div class="about-cards">
                     <img src="{{ Vite::asset('resources/images/icone-developpement-backend.png') }}"
-                         alt="Icone de développement frontend"
+                         alt="Icone de développement backend"
                          width="40" height="40"
                     >
                     <h3 class="uppercase font-bold">Développement backend</h3>
@@ -127,7 +128,7 @@
         <div class="md:w-1/3 md:mx-auto">
             <div class="about-cards">
                 <img src="{{ Vite::asset('resources/images/icone-developpement-site-internet.png') }}"
-                     alt="Icone de développement frontend"
+                     alt="Icone de développement de site internet"
                      width="40" height="40"
                 >
                 <h3 class="uppercase font-bold">Création de site internet</h3>
@@ -205,11 +206,158 @@
         </div>
     </section>
 
+    <section id="how-it-work" class="md:mt-64">
+        <div class="my-24 py-12 bg-black">
+            <h2 class="bordered-white-title">Votre site web en 4 étapes</h2>
+        </div>
+        <div class="md:grid md:space-y-12 md:mx-6">
+            <div class="how-it-work-cards"
+                 data-aos="fade-down"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000">
+                <div class="flex gap-2 items-center justify-center">
+                    <img src="{{ Vite::asset('resources/images/icone-definition-besoin.svg') }}"
+                         alt="Icone définition du besoin"
+                         width="30" height="30"
+                    >
+                    <h3>Définition de votre besoin</h3>
+                </div>
+                <div class="my-6 space-y-4">
+                    <p>
+                        Un projet web efficace est un projet réfléchi en amont. Quel est votre public cible ? Que
+                        souhaitez-vous mettre en avant ? Vous m’expliquez en quoi consiste votre projet, sa nature, son
+                        objectif, afin que je puisse vous guider au mieux.
+                    </p>
+                    <p>
+                        Il est important de se poser toutes ces questions avant de se lancer tête baissée dans son
+                        projet
+                        web.
+                    </p>
+                    <p>
+                        Vous pouvez arriver avec une idée précise que l’on mettra en place en fonction de ce qui est
+                        possible. Mais nous pouvons aussi discuter de ce que vous souhaitez et réfléchir à une solution
+                        ensemble pour le développement de votre site web.
+                    </p>
+                    <p>
+                        Je peux, si vous le souhaitez, m’occuper de la réservation d’un nom de domaine et du choix d’un
+                        hébergement de qualité.
+                    </p>
+                </div>
+            </div>
+            <div class="how-it-work-cards md:w-1/2 md:place-self-end"
+                 data-aos="fade-left"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000">
+                <div class="flex gap-2 items-center justify-center">
+                    <img src="{{ Vite::asset('resources/images/icone-developpement.svg') }}"
+                         alt="Icone de developpement"
+                         width="30" height="30"
+                    >
+                    <h3>La phase de développement</h3>
+                </div>
+                <div class="my-6 space-y-4">
+                    <p>
+                        Je conçois votre site internet en fonction des contenus / images / données que vous m’avez
+                        transférés. Je développe en vous faisant valider les étapes clés pour que le site internet soit
+                        à
+                        votre goût et à votre image et qu’il soit le plus adapté au référencement web.
+                    </p>
+                    <p>
+                        L’arborescence du site est primordiale pour hiérarchiser vos contenus et les articuler de
+                        manière
+                        logique. Elle est aussi bénéfique au référencement naturel (SEO) de votre site.
+                    </p>
+                    <p>
+                        Votre site web n’est pas seulement une URL, c’est un élément essentiel de votre stratégie
+                        marketing
+                        et commerciale. C’est une extension de votre marque et une expérience virtuelle pour vos
+                        consommateurs. Lorsque vous choisissez un développeur de site, vous avez besoin de quelqu’un en
+                        qui
+                        vous pouvez avoir confiance pour exécuter chaque aspect au plus haut niveau de qualité. Ne vous
+                        inquiétez pas : quelle que soit votre entreprise, votre produit ou vos clients, je créerais une
+                        expérience multiplateforme (mobile, tablette et ordinateur).
+                    </p>
+                </div>
+            </div>
+            <div class="how-it-work-cards"
+                 data-aos="fade-up"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000">
+                <div class="flex gap-2 items-center justify-center">
+                    <img src="{{ Vite::asset('resources/images/icone-referencement.svg') }}"
+                         alt="Icone de référencement"
+                         width="30" height="30"
+                    >
+                    <h3>Le référencement</h3>
+                </div>
+                <div class="my-6 space-y-4">
+                    <p>
+                        Cette étape est bien trop souvent négligée, et pourtant elle est capitale si vous souhaitez être
+                        visible dans les moteurs de recherche
+                    </p>
+                    <p>
+                        Le référencement naturel correspond aux techniques mises en place pour améliorer son
+                        positionnement
+                        dans les résultats de recherche de Google, BIng ou Yahoo par rapport à un mot-clé ou une requête
+                        de
+                        plusieurs mots-clés. C’est ce positionnement qui apporte du trafic sur votre site internet et
+                        qui
+                        améliorera potentiellement votre chiffre d’affaires. D’où l’importance de bien travailler son
+                        référencement naturel, pour tous les types de business !
+                    </p>
+                    <p>
+                        Dans un monde où tout le monde peut créer son site internet et être présent sur les moteurs de
+                        recherche, la place de son site web dans les résultats de Google compte énormément pour attirer
+                        du
+                        trafic et des clients. Je mettrais en place les techniques du référencement naturel sur votre
+                        site.
+                    </p>
+                </div>
+            </div>
+            <div class="how-it-work-cards md:w-1/2 md:place-self-end"
+                 data-aos="fade-right"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000">
+                <div class="flex gap-2 items-center justify-center">
+                    <img src="{{ Vite::asset('resources/images/icone-livraison.svg') }}"
+                         alt="Icone de livraison du projet"
+                         width="30" height="30"
+                    >
+                    <h3>La livraison</h3>
+                </div>
+                <div class="my-6 space-y-4">
+                    <p>
+                        C’est l’heure du champagne, votre site est prêt à recevoir la visite de vos futurs clients.
+                    </p>
+                    <p>
+                        Une fois la création de votre site internet terminée, nous validons ensemble tous les éléments
+                        et je
+                        vous explique le fonctionnement.
+                    </p>
+                    <p>
+                        Nous testons votre site sur les navigateurs les plus utilisés sur le marché et nous validons la
+                        conformité du site web.
+                    </p>
+                    <p>
+                        Une fois votre validation acquise, il ne reste plus qu’à le mettre en production sur le serveur
+                        de
+                        destination. Une formation peut vous être proposée si vous souhaitez gérer vous-même les
+                        contenus de
+                        votre site internet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="portfolio" class="md:mt-32">
         <div id="header" class="mt-24 py-12">
             <h2 class="bordered-title">Portfolio</h2>
         </div>
-
 
         <p class="text-center my-24">
             Découvrez mes réalisations précédentes en parcourant mon portfolio.
@@ -299,7 +447,8 @@
         </p>
 
         @if(session('success'))
-            <div class="flex items-center p-4 mb-4 text-gray-500 bg-white rounded-lg shadow success-form md:w-1/4 md:mx-auto">
+            <div
+                class="flex items-center p-4 mb-4 text-gray-500 bg-white rounded-lg shadow success-form md:w-1/4 md:mx-auto">
                 <div
                     class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg">
                     <img src="{{ Vite::asset('resources/images/icone-check.svg') }}"
