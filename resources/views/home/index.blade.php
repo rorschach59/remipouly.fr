@@ -259,7 +259,7 @@
                 </div>
                 <div class="my-6 space-y-4">
                     <p>
-                        Je conçois votre site internet en fonction des contenus / images / données que vous m’avez
+                        <a href="{{ route('development-index')  }}">Je conçois</a> votre site internet en fonction des contenus / images / données que vous m’avez
                         transférés. Je développe en vous faisant valider les étapes clés pour que le site internet soit
                         à
                         votre goût et à votre image et qu’il soit le plus adapté au référencement web.
