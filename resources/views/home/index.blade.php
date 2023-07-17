@@ -240,8 +240,8 @@
                         ensemble pour le développement de votre site web.
                     </p>
                     <p>
-                        Je peux, si vous le souhaitez, m’occuper de la réservation d’un nom de domaine et du choix d’un
-                        hébergement de qualité.
+                        Je peux, si vous le souhaitez, m’occuper de la réservation d’un <a href="{{ route('development-index')  }}" class="link">nom de domaine</a>
+                        et du choix d’un <a href="{{ route('development-index')  }}" class="link">hébergement de qualité</a>.
                     </p>
                 </div>
             </div>
@@ -259,7 +259,7 @@
                 </div>
                 <div class="my-6 space-y-4">
                     <p>
-                        <a href="{{ route('development-index')  }}">Je conçois</a> votre site internet en fonction des contenus / images / données que vous m’avez
+                        <a href="{{ route('development-index')  }}" class="link">Je conçois</a> votre site internet en fonction des contenus / images / données que vous m’avez
                         transférés. Je développe en vous faisant valider les étapes clés pour que le site internet soit
                         à
                         votre goût et à votre image et qu’il soit le plus adapté au référencement web.
@@ -267,7 +267,7 @@
                     <p>
                         L’arborescence du site est primordiale pour hiérarchiser vos contenus et les articuler de
                         manière
-                        logique. Elle est aussi bénéfique au référencement naturel (SEO) de votre site.
+                        logique. Elle est aussi bénéfique au <a href="{{ route('seo-index')  }}" class="link">référencement naturel (SEO)</a> de votre site.
                     </p>
                     <p>
                         Votre site web n’est pas seulement une URL, c’est un élément essentiel de votre stratégie
@@ -299,7 +299,7 @@
                         visible dans les moteurs de recherche
                     </p>
                     <p>
-                        Le référencement naturel correspond aux techniques mises en place pour améliorer son
+                        <a href="{{ route('seo-index')  }}" class="link">Le référencement naturel</a> correspond aux techniques mises en place pour améliorer son
                         positionnement
                         dans les résultats de recherche de Google, BIng ou Yahoo par rapport à un mot-clé ou une requête
                         de
@@ -334,20 +334,18 @@
                         C’est l’heure du champagne, votre site est prêt à recevoir la visite de vos futurs clients.
                     </p>
                     <p>
-                        Une fois la création de votre site internet terminée, nous validons ensemble tous les éléments
+                        Une fois la <a href="{{ route('development-index')  }}" class="link">création de votre site internet</a> terminée, nous validons ensemble tous les éléments
                         et je
                         vous explique le fonctionnement.
                     </p>
                     <p>
                         Nous testons votre site sur les navigateurs les plus utilisés sur le marché et nous validons la
-                        conformité du site web.
+                        <a href="{{ route('design-index')  }}" class="link">conformité du site web</a>.
                     </p>
                     <p>
                         Une fois votre validation acquise, il ne reste plus qu’à le mettre en production sur le serveur
-                        de
-                        destination. Une formation peut vous être proposée si vous souhaitez gérer vous-même les
-                        contenus de
-                        votre site internet.
+                        de destination. Une formation peut vous être proposée si vous souhaitez gérer vous-même les
+                        contenus de votre site internet.
                     </p>
                 </div>
             </div>
@@ -381,7 +379,7 @@
                      width="288" height="216"
                 >
                 <p class="italic text-center text-sm font-bold">
-                    <a href="https://thefringale.fr" target="_blank" class="external-link">
+                    <a href="https://thefringale.fr" target="_blank" class="link">
                         Création du site internet pour la friterie La Fringale
                     </a>
                 </p>
@@ -393,7 +391,7 @@
                      width="288" height="216"
                 >
                 <p class="italic text-center text-sm font-bold">
-                    <a href="https://institut-amana.fr" target="_blank" class="external-link">
+                    <a href="https://institut-amana.fr" target="_blank" class="link">
                         Création du site internet pour l'Institut Amana
                     </a>
                 </p>
@@ -405,7 +403,7 @@
                      width="288" height="216"
                 >
                 <p class="italic text-center text-sm font-bold">
-                    <a href="https://jfc-alu.fr" target="_blank" class="external-link">
+                    <a href="https://jfc-alu.fr" target="_blank" class="link">
                         Création du site internet pour l'entreprise JFC Aluminium
                     </a>
                 </p>
@@ -417,7 +415,7 @@
                      width="288" height="216"
                 >
                 <p class="italic text-center text-sm font-bold">
-                    <a href="https://licoformation.fr" target="_blank" class="external-link">
+                    <a href="https://licoformation.fr" target="_blank" class="link">
                         Création du site internet pour le centre de formation Licoformation
                     </a>
                 </p>
@@ -429,7 +427,7 @@
                      width="288" height="216"
                 >
                 <p class="italic text-center text-sm font-bold">
-                    <a href="https://dujonjohn.fr" target="_blank" class="external-link">
+                    <a href="https://dujonjohn.fr" target="_blank" class="link">
                         Création du site internet pour l'artisan carreleur John DUJON
                     </a>
                 </p>

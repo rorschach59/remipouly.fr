@@ -4,6 +4,9 @@
     h3 {
         @apply font-bold text-xl my-6
     }
+    a {
+        @apply underline hover:font-bold
+    }
 }
 
 .how-it-work-cards {

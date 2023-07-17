@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;600;800&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Andika', sans-serif;
 }
 
+#banner {
+    @apply text-2xl py-48 md:text-5xl text-center text-white font-bold;
+    background-image: url('/resources/images/fond-ecran-bleu.svg');
+}
+
 .bordered-title {
     @apply leading-[2em] font-bold tracking-[0.2em] text-center text-2xl uppercase border-[0.3em] border-black mx-12 md:w-2/6 md:mx-auto
 }
@@ -21,8 +26,8 @@ h1, h2, h3, h4, h5, h6 {
     @apply leading-[2em] font-bold tracking-[0.2em] text-center text-2xl text-white uppercase border-[0.3em] border-white mx-12 md:w-2/6 md:mx-auto
 }
 
-.external-link {
-    @apply underline text-[#B23A48]
+.link {
+    @apply underline text-myRed-800 hover:font-bold
 }
 
 .input {
