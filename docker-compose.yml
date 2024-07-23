@@ -1,0 +1,35 @@
+version: "3"
+services:
+  wwww:
+    build: ./php
+    ports:
+      - "83:80"
+      - "5176:5176"
+    volumes:
+      - "./app:/var/www/html"
+      - "./logs/apache2:/var/log/apache2"
+      - "./apache/default.conf:/etc/apache2/sites-available/000-default.conf"
+
+  db:
+    image: mariadb:10.5.12
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cleanedcontent
+    ports:
+      - 3409:3306
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 85:80
+    environment:
+      MEMORY_LIMIT: 256M
+      UPLOAD_LIMIT: 100M
+
+  mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - "1083:1080"
+      - "1027:1025"
