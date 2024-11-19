@@ -3,7 +3,7 @@ services:
   wwww:
     build: ./php
     ports:
-      - "90:80"
+      - "91:80"
       - "5180:5180"
     volumes:
       - "./app:/var/www/html"
@@ -23,7 +23,7 @@ services:
     image: phpmyadmin
     restart: always
     ports:
-      - 91:80
+      - 92:80
     environment:
       MEMORY_LIMIT: 256M
       UPLOAD_LIMIT: 100M
@@ -31,5 +31,5 @@ services:
   mailcatcher:
     image: schickling/mailcatcher
     ports:
-      - "1090:1080"
+      - "1091:1080"
       - "1030:1025"
