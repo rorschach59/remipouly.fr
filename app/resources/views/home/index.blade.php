@@ -10,9 +10,9 @@
 @section('content')
 
     <div class="md:grid md:grid-cols-5">
-        <section class="p-12 px-4 bg-my-blue-600 h-screen md:col-span-2 md:pt-36 md:space-y-14 md:px-12">
+        <section class="p-12 px-4 bg-my-blue-600 md:h-screen md:col-span-2 md:pt-36 md:space-y-14 md:px-12">
             <h1 id="accueil" class="text-my-yellow-400 font-thin">Notre sélection de matériel de loisirs!</h1>
-            <p class="text-my-yellow-400 font-thin md:leading-9 md:tracking-wide md:text-xl">Des tables, des chaises, des barnums, et bien plus encore. Nous
+            <p class="py-12 text-my-yellow-400 font-thin md:leading-9 md:tracking-wide md:text-xl md:py-0">Des tables, des chaises, des barnums, et bien plus encore. Nous
                 avons tout à des prix abordables!</p>
             <div class="text-center mt-12">
                 <a href="#contact" class="secondary-button">Nous contacter</a>

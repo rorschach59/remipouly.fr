@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-    @apply text-2xl py-6 md:text-4xl md:py-20 md:tracking-widest
+    @apply text-3xl py-6 md:text-4xl md:py-20 md:tracking-widest
 }
 
 body {
@@ -61,7 +61,7 @@ nav > div > a {
         @apply tracking-wide text-xl font-bold pb-3;
     }
     hr {
-        @apply w-1/12 mx-auto border-2 border-my-blue-600;
+        @apply w-3/12 mx-auto border-2 border-my-blue-600 md:w-1/12;
     }
 }
 

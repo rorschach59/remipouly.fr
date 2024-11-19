@@ -17,13 +17,13 @@
     </div>
 
     <div class="text-my-blue-600">
-        <section class="md:grid md:grid-cols-2">
+        <section class="grid grid-cols-1 md:grid-cols-2">
             <div>
                 <img src="{{ Vite::asset('resources/images/table-a-louer.webp') }}"
                      alt="Table à louer"
                 >
             </div>
-            <div class="place-self-center md:px-32">
+            <div class="px-4 py-16 place-self-center md:px-32 md:py-0">
                 <h2 class="pt-0 font-bold">Tables</h2>
                 <p class="leading-7"><span class="underline">Tables pliantes rectangulaires :</span> Idéales pour installer des buffets, des ateliers créatifs ou des espaces de jeux de société. Elles
                     offrent un support stable et pratique pour toutes vos activités.</p>
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="place-self-center md:px-32">
+            <div class="order-2 px-4 py-16 place-self-center md:px-32 md:py-0">
                 <h2 class="pt-0 font-bold">Chaises</h2>
                 <p class="leading-7"><span class="underline">Chaises pliantes confortables :</span> Assurez le confort de vos invités tout au long de votre événement. Faciles à installer et à déplacer,
                     elles s'adaptent à toutes les configurations d'espace.</p>
@@ -42,7 +42,7 @@
                     <a href="{{ route('contact.home') }}" class="primary-button">Nous contacter</a>
                 </div>
             </div>
-            <div>
+            <div class="order-1">
                 <img src="{{ Vite::asset('resources/images/chaise-a-louer.webp') }}"
                      alt="Chaise à louer">
             </div>
