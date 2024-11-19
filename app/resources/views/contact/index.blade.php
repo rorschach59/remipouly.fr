@@ -1,7 +1,7 @@
 @extends('base')
 
-@section('title', "Evaluez votre fonds de commerce")
-@section('meta-desc', "Evaluez votre fonds de commerce grâce à notre outil qui croise cessions et bilans pour vous fournir les ratios d'évaluation les plus récents.")
+@section('title', "Contactez-nous")
+@section('meta-desc', "Vous avez une question ou souhaitez obtenir un devis ? Contactez nous pour toute demande liée à la location de matériel événementiel et de loisirs.")
 
 @section('assets')
     <script async src="https://www.google.com/recaptcha/api.js"></script>

@@ -1,7 +1,7 @@
 @extends('base')
 
-@section('title', "Evaluez votre fonds de commerce")
-@section('meta-desc', "Evaluez votre fonds de commerce grâce à notre outil qui croise cessions et bilans pour vous fournir les ratios d'évaluation les plus récents.")
+@section('title', "Location de Mobilier Événementiel | Chaises, Tables et Barnums")
+@section('meta-desc', "Découvrez notre gamme de mobilier en location : chaises, tables, et accessoires pour tous vos événements. Qualité et flexibilité pour une organisation sans stress, adaptée aux particuliers et professionnels.")
 
 @section('assets')
 @endsection

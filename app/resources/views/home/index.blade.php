@@ -1,7 +1,7 @@
 @extends('base')
 
-@section('title', "Evaluez votre fonds de commerce")
-@section('meta-desc', "Evaluez votre fonds de commerce grâce à notre outil qui croise cessions et bilans pour vous fournir les ratios d'évaluation les plus récents.")
+@section('title', "Location d'articles événementiels et de loisirs")
+@section('meta-desc', "Bienvenue chez Béthune location fête, votre spécialiste en location de matériel événementiel : chaises, tables, barnums, jeux, et plus encore. Idéal pour particuliers et professionnels, avec un service sur-mesure régional.")
 
 @section('assets')
     <script async src="https://www.google.com/recaptcha/api.js"></script>
