@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="order-2 px-4 py-16 place-self-center md:px-32 md:py-0">
+            <div class="order-2 px-4 py-16 place-self-center md:px-32 md:py-0 md:order-1">
                 <h2 class="pt-0 font-bold">Chaises</h2>
                 <p class="leading-7"><span class="underline">Chaises pliantes confortables :</span> Assurez le confort de vos invités tout au long de votre événement. Faciles à installer et à déplacer,
                     elles s'adaptent à toutes les configurations d'espace.</p>
@@ -42,7 +42,7 @@
                     <a href="{{ route('contact.home') }}" class="primary-button">Nous contacter</a>
                 </div>
             </div>
-            <div class="order-1">
+            <div class="order-1 md:order-2">
                 <img src="{{ Vite::asset('resources/images/chaise-a-louer.webp') }}"
                      alt="Chaise à louer">
             </div>

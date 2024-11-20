@@ -17,6 +17,7 @@
                 <li>Béthune, France</li>
                 <li>Email : contact@remipouly.fr</li>
                 <li>Téléphone : 07 89 58 09 18</li>
+                <li>SIRET : 89410808300029</li>
             </ul>
 
             @if(session()->has('success'))
