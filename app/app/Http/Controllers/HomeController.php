@@ -4,39 +4,45 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactFormRequest;
 use App\Mail\ContactForm;
-use Illuminate\Support\Facades\Http;
+use App\Mail\ContactFormClient;
+use App\Services\SkillsImagesService;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use Symfony\Component\HttpFoundation\IpUtils;
+use Illuminate\View\View;
 
 class HomeController extends Controller
 {
-    public function index()
+
+    /**
+     * @param SkillsImagesService $skillsImagesService
+     * @return View
+     */
+    public function home(SkillsImagesService $skillsImagesService): View
     {
-        return view('home/index');
+        $skillsImages = $skillsImagesService->getSkillsImages();
+
+        return view('home/index', [
+            'skillsImages' => $skillsImages,
+        ]);
     }
 
-    public function handleContactForm(ContactFormRequest $request)
+    /**
+     * @param ContactFormRequest $request
+     * @return RedirectResponse
+     */
+    public function manageContactForm(ContactFormRequest $request): RedirectResponse
     {
-        $data = $request->validated();
-        $recaptcha = $request->input('g-recaptcha-response');
-        $url = 'https://www.google.com/recaptcha/api/siteverify';
 
-        $params = [
-            'secret' => config('services.recaptcha.secret'),
-            'response' => $recaptcha,
-            'remoteip' => IpUtils::anonymize($request->ip())
-        ];
-
-        $response = Http::post($url, $params);
-        $result = json_decode($response);
-
-        if (!$response->successful() && $result->success == true) {
-            $request->session()->flash('message', 'Veuillez compléter le recaptcha pour continuer.');
-            return redirect()->back();
+        if ($request->validated()) {
+            try {
+                Mail::to('contact@remipouly.fr')->send(new ContactForm($request->all()));
+                Mail::to($request->get('email'))->send(new ContactFormClient());
+            } catch (\Exception $e) {
+                Log::error('Erreur lors de l\'envoi d\'email formulaire de contact: ' . $e->getMessage());
+            }
         }
 
-        Mail::to(env('CONTACT_EMAIL'))->send(new ContactForm($data));
-
-        return redirect()->route('home')->with('success', 'Votre message a été envoyé avec succès');
+        return redirect()->route('home')->with('success', ' ');
     }
 }

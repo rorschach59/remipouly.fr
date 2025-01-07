@@ -3,8 +3,8 @@ services:
   wwww:
     build: ./php
     ports:
-      - "91:80"
-      - "5180:5180"
+      - "92:80"
+      - "5181:5181"
     volumes:
       - "./app:/var/www/html"
       - "./logs/apache2:/var/log/apache2"
@@ -15,15 +15,15 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cleanedcontent
+      MYSQL_DATABASE: remipouly
     ports:
-      - 3416:3306
+      - 3417:3306
 
   phpmyadmin:
     image: phpmyadmin
     restart: always
     ports:
-      - 92:80
+      - 93:80
     environment:
       MEMORY_LIMIT: 256M
       UPLOAD_LIMIT: 100M
@@ -31,5 +31,5 @@ services:
   mailcatcher:
     image: schickling/mailcatcher
     ports:
-      - "1091:1080"
-      - "1030:1025"
+      - "1092:1080"
+      - "1031:1025"

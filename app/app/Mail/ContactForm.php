@@ -15,37 +15,48 @@ class ContactForm extends Mailable
 
     /**
      * Create a new message instance.
+     *
+     * @return void
      */
-    public function __construct(public array $data)
-    {
-    }
+    public function __construct(protected $contact)
+    {}
 
     /**
      * Get the message envelope.
+     *
+     * @return \Illuminate\Mail\Mailables\Envelope
      */
-    public function envelope(): Envelope
+    public function envelope()
     {
         return new Envelope(
-            subject: 'Prise de contact',
+            subject: 'Contact Form',
         );
     }
 
     /**
      * Get the message content definition.
+     *
+     * @return \Illuminate\Mail\Mailables\Content
      */
-    public function content(): Content
+    public function content()
     {
         return new Content(
-            view: 'emails.contact-form',
+            view: 'emails.contact',
+            with: [
+                'name' => $this->contact['name'],
+                'email' => $this->contact['email'],
+                'phone' => $this->contact['phone'],
+                'clientMessage' => $this->contact['message'],
+            ]
         );
     }
 
     /**
      * Get the attachments for the message.
      *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     * @return array
      */
-    public function attachments(): array
+    public function attachments()
     {
         return [];
     }
