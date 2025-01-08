@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::post('/', [HomeController::class, 'manageContactForm']);
+Route::get('/desinscription-emailing', [HomeController::class, 'unsubscribeEmail'])->name('unsubscribe-email');
+Route::post('/desinscription-emailing', [HomeController::class, 'handleUnsubscribeEmail'])->name('handle-unsubscribe-email');
 
 Route::get('/mentions-legales', function () {
     return view('legal-notices.index');
