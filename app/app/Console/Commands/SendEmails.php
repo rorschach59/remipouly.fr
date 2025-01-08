@@ -78,6 +78,7 @@ class SendEmails extends Command
         })
             ->whereNull('email_historics.id')
             ->where('contacts.type', 'Mail')
+            // a retirer
             ->where('contacts.id', 8267039)
             ->select('contacts.*')
             ->limit(250)
