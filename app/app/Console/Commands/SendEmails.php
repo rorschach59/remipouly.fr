@@ -52,7 +52,7 @@ class SendEmails extends Command
 
         foreach ($this->getContacts($templateId) as $contact) {
 
-            $this->sendClientEmail($contact->value);
+            $this->sendClientEmail($contact->value, $contact->id);
 
             dd($contact->id);
 
@@ -87,14 +87,15 @@ class SendEmails extends Command
     /**
      * @param string $clientEmail
      */
-    private function sendClientEmail(string $clientEmail): void
+    private function sendClientEmail(string $clientEmail, int $contactId): void
     {
 
         $params = [
             'sender' => ['email' => self::SENDER_EMAIL],
             'to' => [['email' => $clientEmail]],
             'params' => [
-                'portfolio_link' => self::PORTFOLIO_LINK
+                'portfolio_link' => self::PORTFOLIO_LINK,
+                'contact_id' => $contactId,
             ],
             'templateId' => self::TEMPLATE_EMAIL_ID
         ];
