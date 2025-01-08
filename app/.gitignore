@@ -16,4 +16,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-app/Commands/*.csv
+app/Console/Commands/*.csv
