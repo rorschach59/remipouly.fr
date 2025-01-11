@@ -373,6 +373,30 @@
              data-aos-duration="1000"
         >
             <div class="portfolio-card">
+                <img src="{{ Vite::asset('resources/images/creation-site-internet-evaluation-fonds-de-commerce.fr.png') }}"
+                     alt="Création du site internet evaluation-fonds-de-commerce"
+                     class="mx-auto"
+                     width="288" height="216"
+                >
+                <p class="italic text-center text-sm font-bold">
+                    <a href="https://evaluation-fonds-de-commerce.fr" target="_blank" class="link">
+                        Création du site internet evaluation-fonds-de-commerce
+                    </a>
+                </p>
+            </div>
+            <div class="portfolio-card">
+                <img src="{{ Vite::asset('resources/images/creation-site-interne-base-des-loyers.png') }}"
+                     alt="Création du site internet base-des-loyers"
+                     class="mx-auto"
+                     width="288" height="216"
+                >
+                <p class="italic text-center text-sm font-bold">
+                    <a href="https://base-des-loyers.fr" target="_blank" class="link">
+                        Création du site internet base-des-loyers
+                    </a>
+                </p>
+            </div>
+            <div class="portfolio-card">
                 <img src="{{ Vite::asset('resources/images/creation-site-internet-lafringale.png') }}"
                      alt="Création du site internet pour la friterie La Fringale"
                      class="mx-auto"
