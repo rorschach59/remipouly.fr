@@ -13,7 +13,9 @@ class Contact extends Model
         'lead_id',
         'type',
         'value',
+        'email_status',
         'want_to_receive_email',
+        'active',
         'updated_at',
     ];
 

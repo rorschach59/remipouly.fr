@@ -16,6 +16,7 @@ class SendEmails extends Command
 
     private const SENDER_EMAIL = 'contact@remipouly.fr';
     private const TEMPLATE_EMAIL_ID = 19;
+    private const TEMPLATES_EMAIL_ID = [19,21,22];
     private const PORTFOLIO_LINK = 'https://www.remipouly.fr/#portfolio';
     private const BREVO_LINK = 'https://api.sendinblue.com/v3/smtp/email';
 
