@@ -396,18 +396,6 @@
                     </a>
                 </p>
             </div>
-            <div class="portfolio-card">
-                <img src="{{ Vite::asset('resources/images/creation-site-internet-lafringale.png') }}"
-                     alt="Création du site internet pour la friterie La Fringale"
-                     class="mx-auto"
-                     width="288" height="216"
-                >
-                <p class="italic text-center text-sm font-bold">
-                    <a href="https://thefringale.fr" target="_blank" class="link">
-                        Création du site internet pour la friterie La Fringale
-                    </a>
-                </p>
-            </div>
             <div class="portfolio-card bg-gray-200/90 md:bg-transparent">
                 <img src="{{ Vite::asset('resources/images/creation-site-internet-institutamana.png') }}"
                      alt="Création du site internet pour l'Institut Amana"
